@@ -2,13 +2,48 @@
 <html>
 <body>
 
-<h2>My First JavaScript</h2>
+<section>
+    <h2>My First JavaScript</h2>
 
-<button type="button"
-        onclick="document.getElementById('demo').innerHTML = Date()">
-    Click me to display Date and Time.</button>
+    <button type="button"
+            onclick="document.getElementById('demo').innerHTML = Date()">
+        Click me to display Date and Time.</button>
 
-<p id="demo"></p>
+    <p id="demo"></p>
+</section>
+
+<hr>
+
+<section>
+    <h2>JavaScript getFullYear()</h2>
+
+    <p>The getFullYear() method returns the full year of a date:</p>
+
+    <p id="demo1"></p>
+
+    <script>
+        var d = new Date();
+        document.getElementById("demo1").innerHTML = d.getFullYear();
+    </script>
+</section>
+
+<hr>
+
+<section>
+    <h2>JavaScript getMonth()</h2>
+
+    <p>The getMonth() method returns the month as a number:</p>
+
+    <p>You can use an array to display the name of the month:</p>
+
+    <p id="demo2"></p>
+
+    <script>
+        var d = new Date();
+        var months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+        document.getElementById("demo2").innerHTML = months[d.getMonth()];
+    </script>
+</section>
 
 </body>
 </html>
